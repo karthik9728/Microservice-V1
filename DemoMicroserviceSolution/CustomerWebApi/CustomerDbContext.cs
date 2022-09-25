@@ -1,9 +1,9 @@
-﻿using CustomerWebApi.Models;
+﻿using CustomerWebAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace CustomerWebApi
+namespace CustomerWebAPI
 {
     public class CustomerDbContext : DbContext
     {

@@ -1,8 +1,8 @@
-﻿using CustomerWebApi.Models;
+﻿using CustomerWebAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CustomerWebApi.Controllers
+namespace CustomerWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
