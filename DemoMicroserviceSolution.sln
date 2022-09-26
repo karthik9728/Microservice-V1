@@ -5,13 +5,13 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{AEA5FADB-29E4-4703-9474-EA647493C68D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerWebApi", "CustomerWebApi\CustomerWebApi.csproj", "{756B0E9C-DD3C-47A1-B717-66E7016CB48F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerWebApi", "DemoMicroserviceSolution\CustomerWebApi\CustomerWebApi.csproj", "{756B0E9C-DD3C-47A1-B717-66E7016CB48F}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{49DFA22A-239A-44ED-8097-D70017563CC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductWebApi", "DemoMicroserviceSolution\ProductWebApi\ProductWebApi.csproj", "{DC29BDC8-FA1B-44EF-AFA2-061A2DCCD7C1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductWebApi", "ProductWebApi\ProductWebApi.csproj", "{DC29BDC8-FA1B-44EF-AFA2-061A2DCCD7C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderWebApi", "DemoMicroserviceSolution\OrderWebApi\OrderWebApi.csproj", "{0EC8B006-686C-4CAF-9B17-6F089C77145A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderWebApi", "OrderWebApi\OrderWebApi.csproj", "{0EC8B006-686C-4CAF-9B17-6F089C77145A}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{243D3785-B6B8-44AD-8B52-63BB8D830FD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{756B0E9C-DD3C-47A1-B717-66E7016CB48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{756B0E9C-DD3C-47A1-B717-66E7016CB48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{756B0E9C-DD3C-47A1-B717-66E7016CB48F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{49DFA22A-239A-44ED-8097-D70017563CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49DFA22A-239A-44ED-8097-D70017563CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49DFA22A-239A-44ED-8097-D70017563CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49DFA22A-239A-44ED-8097-D70017563CC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DC29BDC8-FA1B-44EF-AFA2-061A2DCCD7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DC29BDC8-FA1B-44EF-AFA2-061A2DCCD7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC29BDC8-FA1B-44EF-AFA2-061A2DCCD7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{0EC8B006-686C-4CAF-9B17-6F089C77145A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EC8B006-686C-4CAF-9B17-6F089C77145A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EC8B006-686C-4CAF-9B17-6F089C77145A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{243D3785-B6B8-44AD-8B52-63BB8D830FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{243D3785-B6B8-44AD-8B52-63BB8D830FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{243D3785-B6B8-44AD-8B52-63BB8D830FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{243D3785-B6B8-44AD-8B52-63BB8D830FD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

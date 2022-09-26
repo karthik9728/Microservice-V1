@@ -6,10 +6,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["OrderWebApi/OrderWebApi.csproj", "OrderWebApi/"]
-RUN dotnet restore "OrderWebApi/OrderWebApi.csproj"
+COPY ["DemoMicroserviceSolution/OrderWebApi/OrderWebApi.csproj", "DemoMicroserviceSolution/OrderWebApi/"]
+RUN dotnet restore "DemoMicroserviceSolution/OrderWebApi/OrderWebApi.csproj"
 COPY . .
-WORKDIR "/src/OrderWebApi"
+WORKDIR "/src/DemoMicroserviceSolution/OrderWebApi"
 RUN dotnet build "OrderWebApi.csproj" -c Release -o /app/build
 
 FROM build AS publish
