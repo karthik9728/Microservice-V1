@@ -12,8 +12,8 @@ namespace OrderWebApi.Controllers
         private readonly IMongoCollection<Order> _orderCollection;
         public OrderController()
         {
-            var dbHost = "localhost";
-            var dbName = "dms_order";
+            var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+            var dbName = Environment.GetEnvironmentVariable("DB_NAME");
             var connectionString = $"mongodb://{dbHost}:27017/{dbName}";
 
             var mongoUrl = MongoUrl.Create(connectionString);
