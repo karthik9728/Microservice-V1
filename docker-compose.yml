@@ -2,6 +2,7 @@ version: '3.4'
 
 networks:
     backend:
+    frontend:
 
 services:
   customerdb:
@@ -85,6 +86,18 @@ services:
       dockerfile: ApiGateway/Dockerfile
     networks:
         - backend
+        - frontend
     ports:
         - 8007:80
+
+  blazorserverwebui:
+    container_name: blazor-web-ui
+    image: ${DOCKER_REGISTRY-}blazorserverwebui
+    build:
+      context: .
+      dockerfile: BlazorServerWebUi/Dockerfile
+    ports:
+        - 8008:80
+    networks:
+        - frontend
 

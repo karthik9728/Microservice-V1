@@ -9,6 +9,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
+//Http Client Dependency Injection
+builder.Services.AddScoped(x=> new HttpClient { BaseAddress = new Uri("http://apigateway")});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
