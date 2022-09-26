@@ -14,6 +14,7 @@ services:
         - backend
     ports:
         - 8001:1433
+
   customerwebapi:
     container_name: customer-api
     image: ${DOCKER_REGISTRY-}customerwebapi
@@ -28,6 +29,7 @@ services:
         - DB_HOST=customerdb
         - DB_NAME=dms_customer
         - DB_SA_PASSWORD=karthik@123
+
   productdb:
     container_name: product-db
     image: mysql:8.0.30
@@ -37,6 +39,7 @@ services:
         - 8003:3306
     networks:
         - backend
+
   productwebapi:
     container_name: product-api
     image: ${DOCKER_REGISTRY-}productwebapi
@@ -51,3 +54,13 @@ services:
         - DB_HOST=productdb
         - DB_NAME=dms_product
         - DB_ROOT_PASSWORD=password@12345#
+  
+  orderdb:
+    container_name: order-db
+    image: mongo
+    networks:
+        - backend
+    ports:
+        - 8005:27017
+
+
