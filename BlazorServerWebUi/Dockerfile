@@ -6,10 +6,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["BlazorServerWebUi/BlazorServerWebUI.csproj", "BlazorServerWebUi/"]
-RUN dotnet restore "BlazorServerWebUi/BlazorServerWebUI.csproj"
+COPY ["BlazorServerWebUI/BlazorServerWebUI.csproj", "BlazorServerWebUI/"]
+RUN dotnet restore "BlazorServerWebUI/BlazorServerWebUI.csproj"
 COPY . .
-WORKDIR "/src/BlazorServerWebUi"
+WORKDIR "/src/BlazorServerWebUI"
 RUN dotnet build "BlazorServerWebUI.csproj" -c Release -o /app/build
 
 FROM build AS publish
