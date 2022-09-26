@@ -13,10 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderWebApi", "DemoMicroser
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{243D3785-B6B8-44AD-8B52-63BB8D830FD4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OcelotApiGateway", "OcelotApiGateway", "{D4B6B767-8EFD-4A11-AC0B-9EF5B0CDC103}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "..\ApiGateway\ApiGateway.csproj", "{D53C077B-5941-4DE7-9716-13F656D90E1E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,10 +35,6 @@ Global
 		{243D3785-B6B8-44AD-8B52-63BB8D830FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{243D3785-B6B8-44AD-8B52-63BB8D830FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{243D3785-B6B8-44AD-8B52-63BB8D830FD4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D53C077B-5941-4DE7-9716-13F656D90E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D53C077B-5941-4DE7-9716-13F656D90E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D53C077B-5941-4DE7-9716-13F656D90E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D53C077B-5941-4DE7-9716-13F656D90E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,7 +43,6 @@ Global
 		{756B0E9C-DD3C-47A1-B717-66E7016CB48F} = {AEA5FADB-29E4-4703-9474-EA647493C68D}
 		{DC29BDC8-FA1B-44EF-AFA2-061A2DCCD7C1} = {AEA5FADB-29E4-4703-9474-EA647493C68D}
 		{0EC8B006-686C-4CAF-9B17-6F089C77145A} = {AEA5FADB-29E4-4703-9474-EA647493C68D}
-		{D53C077B-5941-4DE7-9716-13F656D90E1E} = {D4B6B767-8EFD-4A11-AC0B-9EF5B0CDC103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CCB8F150-F852-4D22-B4E3-574B2011E527}
